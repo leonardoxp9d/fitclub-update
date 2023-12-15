@@ -1,29 +1,40 @@
 .testimonials{
     display: flex;
-    gap: 1rem;
-    padding: 0 2rem;
+    gap: 1.6rem;
+    padding: 0 3.2rem;
 }
 
 .left-t{
     display: flex;
     flex: 1 1;
-    gap: 2rem;
+    gap: 3.2rem;
     flex-direction: column;
     text-transform: uppercase;
     color: white;
 }
 
+.left-t > :nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
 .left-t>:nth-child(2),
 .left-t>:nth-child(3){
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4.8rem;
 }
 
 .left-t>:nth-child(4){
     text-transform: none;
     text-align: justify;
-    letter-spacing: 2px;
-    line-height: 40px;
+    letter-spacing: .2rem;
+    line-height: 4rem;
+    font-size: 1.6rem;
+}
+
+.left-t>:nth-child(5){
+    font-size: 1.6rem;
 }
 
 .right-t{
@@ -33,42 +44,42 @@
 
 .right-t>img{
     position: absolute;
-    width: 17rem;
-    height: 20rem;
+    width: 27.2rem;
+    height: 32rem;
     object-fit: cover;
-    right: 8rem;
-    top: 2rem;
+    right: 12.8rem;
+    top: 3.2rem;
 }
 
 .right-t>:nth-child(1){
     position: absolute;
-    width: 17rem;
-    height: 20rem;
-    border: 2px solid orange;
+    width: 27.2rem;
+    height: 32rem;
+    border: .2rem solid orange;
     background-color: transparent;
-    right: 9rem;
-    top: 0.9rem;
+    right: 14.4rem;
+    top: 1.44rem;
 }
 
 .right-t>:nth-child(2){
     position: absolute;
-    width: 17rem;
-    height: 19rem;
-    right: 7rem;
-    top: 4rem;
+    width: 27.2rem;
+    height: 30.4rem;
+    right: 11.2rem;
+    top: 6.4rem;
     background: var(--planCard);
 }
 
 .arrows{
     display: flex;
-    gap: 1rem;
+    gap: 1.6rem;
     position: absolute;
-    bottom: 1rem;
-    left: 3rem;
+    bottom: 1.6rem;
+    left: 4.8rem;
 }
 
 .arrows>img{
-    width: 1.5rem;
+    width: 2.4rem;
     cursor: pointer;
 }
 
@@ -87,7 +98,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 3.2rem;
     }
 
     .right-t > div {

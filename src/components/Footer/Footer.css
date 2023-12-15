@@ -7,44 +7,44 @@
 }
 
 .footer{
-    padding: 1rem 2rem;
+    padding: 1.6rem 3.2rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 6.4rem;
     align-items: center;
     justify-content: center;
-    height: 20rem;
+    height: 32rem;
 }
 
 .social-links{
     display: flex;
-    gap: 4rem;
+    gap: 6.4rem;
 }
 
 .social-links>img{
-    width: 2rem;
-    height: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
     cursor: pointer;
 }
 
 .logo-f>img{
-    width: 10rem;
+    width: 16rem;
 }
 
 .blur-f-1 {
     bottom: 0;
     right: 15%;
-    width: 26rem;
-    height: 12rem;
-    filter: blur(200px);
+    width: 41.6rem;
+    height: 19.2rem;
+    filter: blur(20rem);
     background-color: red;
 }
 
 .blur-f-2{
     bottom: 0;
     left: 15%;
-    width: 26rem;
-    height: 12rem;
-    filter: blur(200px);
+    width: 41.6rem;
+    height: 19.2rem;
+    filter: blur(20rem);
     background-color: rgb(255, 115, 0);
 }

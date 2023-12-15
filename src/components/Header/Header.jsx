@@ -15,15 +15,15 @@ const Header = () => {
           <div 
             style={{
               background: "var(--appColor)", 
-              padding: "0.5rem",
-              borderRadius: "5px",
+              padding: ".8rem",
+              borderRadius: ".5rem",
             }}
             onClick={() => setMenuOpened(true)}
           >
             <img 
               src={Bars} 
               alt="" 
-              style={{ width: "1.5rem", height: "1.5rem" }}  
+              style={{ width: "2.4rem", height: "2.4rem" }}  
             />
           </div>
         ):(

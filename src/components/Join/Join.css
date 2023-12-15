@@ -1,12 +1,12 @@
 .Join{
     display: flex;
-    padding: 0 2rem;
-    gap: 10rem;
+    padding: 0 3.2rem;
+    gap: 16rem;
 }
 
 .left-j{
     color: white;
-    font-size: 3rem;
+    font-size: 4.8rem;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
@@ -14,15 +14,15 @@
 
 .left-j>hr{
     position: absolute;
-    width: 10.5rem;
-    border: 2px solid var(--orange);
+    width: 16.8rem;
+    border: .2rem solid var(--orange);
     border-radius: 20%;
-    margin: -10px 0;
+    margin: -1rem 0;
 }
 
 .left-j>div {
     display: flex;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
 .right-j{
@@ -33,9 +33,9 @@
 
 .email-container{
     display: flex;
-    gap: 3rem;
+    gap: 4.8rem;
     background: gray;
-    padding: 1rem 2rem;
+    padding: 1.6rem 3.2rem;
 }
 
 .email-container>input{
@@ -57,13 +57,13 @@
 @media screen and (max-width: 768px) {
     .Join {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.6rem;
     }
     .left-j {
         font-size: x-large;
         flex-direction: column;
     }
     .right-j {
-        padding: 2rem;
+        padding: 3.2rem;
     }
 }

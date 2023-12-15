@@ -1,16 +1,15 @@
 .Reasons{
-    padding: 0 2rem;
+    padding: 0 3.2rem;
     display: flex;
-    gap: 2rem;
+    gap: 3.2rem;
 }
 
 .left-r{
     flex: 1 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.6rem;
     grid-auto-rows: 1fr;
-    //border: 1px solid red;
 }
 
 .left-r > img {
@@ -18,23 +17,23 @@
 }
 
 .left-r>:nth-child(1){
-    width: 12rem;
+    width: 19.2rem;
     grid-row: 1/3;
-    height: 28rem;
+    height: 44.8rem;
     //border: 1px solid blue;
 
 }
 
 .left-r>:nth-child(2){
     width: auto;
-    height: 16rem;
+    height: 25.6rem;
     grid-column: 2/4;
     //border: 1px solid yellow;
 
 }
 
 .left-r>:nth-child(3){
-    width: 14rem;
+    width: 22.4rem;
     grid-column: 2/3;
     grid-row: 2;
     //border: 1px solid green;
@@ -42,17 +41,17 @@
 }
 
 .left-r>:nth-child(4){
-    width: 10rem;
+    width: 16rem;
     grid-row: 2;
     grid-column: 3/4;
-    height: 11.2rem;
+    height: 17.92rem;
     //border: 1px solid white;
 }
 
 .right-r{
     flex: 1 1;
     text-transform: uppercase;
-    gap: 1rem;
+    gap: 1.6rem;
     display: flex;
     flex-direction: column;
 }
@@ -60,39 +59,40 @@
 .right-r>span{
     font-weight: bold;
     color: var(--orange);
+    font-size: 1.6rem;
 }
 
 .right-r>div{
     color: white;
-    font-size: 3rem;
+    font-size: 4.8rem;
     font-weight: bold;
 }
 
 .details-r{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
 .details-r>div{
     display: flex;
-    font-size: 1rem;
-    gap: 1rem;
+    font-size: 1.6rem;
+    gap: 1.6rem;
     ///align-items: center ideia; 
 }
 
 .details-r>div>img{
-    width: 2rem;
-    height: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .partners{
     display: flex;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
 .partners>img{
-    width: 2.5rem;
+    width: 4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,22 +106,22 @@
     }
 
     .left-r > :nth-child(1) {
-        width: 7rem;
-        height: 17rem;
+        width: 11.2rem;
+        height: 27.2rem;
     }
 
     .left-r > :nth-child(2) {
-        width: 15rem;
-        height: 10rem;
+        width: 24rem;
+        height: 16rem;
     }
 
     .left-r > :nth-child(3) {
-        width: 7rem;
+        width: 11.2rem;
     }
 
     .left-r > :nth-child(4) {
-        width: 7rem;
-        height: 6rem;
+        width: 11.2rem;
+        height: 9.6rem;
     }
 
     

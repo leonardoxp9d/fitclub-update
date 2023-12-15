@@ -19,18 +19,15 @@ const Hero = () => {
       <div className="left-h">
         <Header/> 
         {/* the best ad */}
-        <div className="container-the-best-ad">
-          <div className="the-best-ad">
-            <motion.div
-              initial={{ left: mobile? "178px" : "238px"}}
-              whileInView={{ left: "8px" }}
-              transition={{ ...transition, type: "tween" }}
-            ></motion.div>
-              <span>the best fitness club in the town</span>
-          </div>
-
+        <div className="the-best-ad">
+          <motion.div
+            initial={{ left: mobile? "17.8rem" : "23.8rem"}}
+            whileInView={{ left: ".8rem" }}
+            transition={{ ...transition, type: "tween" }}
+          ></motion.div>
+            <span>the best fitness club in the town</span>
         </div>
-        
+
         {/*Hero Heading */}
         <div className="hero-text">
           <div>
@@ -84,8 +81,8 @@ const Hero = () => {
         <button className="btn">Join Now</button>
 
         <motion.div 
-          initial={{ right: "-1rem" }}
-          whileInView={{ right: "4rem" }}
+          initial={{ right: "-1.6rem" }}
+          whileInView={{ right: "6.4rem" }}
           transition={ transition }
           className='heart-rate'>
           <img src={Heart} alt=""/>
@@ -97,8 +94,8 @@ const Hero = () => {
         <img src={hero_image} alt="" className="hero-image" />
 
         <motion.img 
-          initial={{ right: "11rem" }}
-          whileInView={{ right: "20rem" }}
+          initial={{ right: "17.6rem" }}
+          whileInView={{ right: "32rem" }}
           transition={transition}
           src={hero_image_back} 
           alt="" 
@@ -107,8 +104,8 @@ const Hero = () => {
 
         {/* calories */}
         <motion.div
-          initial={{ right: "37rem" }}
-          whileInView={{ right: "28rem" }}
+          initial={{ right: "59.2rem" }}
+          whileInView={{ right: "44.8rem" }}
           transition={ transition } 
           className="calories">
           <img src={Calories} alt=""/>
