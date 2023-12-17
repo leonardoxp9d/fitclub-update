@@ -22,6 +22,20 @@ a {
   text-decoration: none;
 }
 
+button {
+  /* Redefina as propriedades de estilo padrão */
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none; 
+  transition: filter .3s ease-in-out;
+}
+
+button:hover {
+  filter: brightness(.8);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

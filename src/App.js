@@ -6,8 +6,7 @@ import Reasons from './components/Reasons/Reasons';
 import Testimonials from './components/Testimonials/Testimonials';
 import Join from './components/Join/Join';
 import Footer from './components/Footer/Footer';
-
-
+import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton';
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
       <Testimonials/>
       <Join/>
       <Footer/>
+      <ScrollTopButton/>
     </div>
   );
 }
