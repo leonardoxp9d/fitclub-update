@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 4.8rem;
+
 }
 
 .plan {
@@ -21,7 +22,7 @@
     color: white;
     gap: 3.2rem;
     padding: 2.4rem;
-    width: 24rem;
+    width: 28.8rem;
 }
 
 .plan:nth-child(2) {

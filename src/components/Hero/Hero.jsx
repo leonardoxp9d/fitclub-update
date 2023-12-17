@@ -16,8 +16,10 @@ const Hero = () => {
     <div className="hero" id="home">
       <div className="blur hero-blur"></div>
       
+      {/*<Header/>*/}
+
       <div className="left-h">
-        <Header/> 
+        <Header/>
         {/* the best ad */}
         <div className="the-best-ad">
           <motion.div

@@ -16,19 +16,23 @@
     height: 32rem;
 }
 
-.social-links{
+.footer-social-media{
     display: flex;
     gap: 6.4rem;
+    font-size: 3.2rem;
 }
 
-.social-links>img{
-    width: 3.2rem;
-    height: 3.2rem;
-    cursor: pointer;
+.footer-social-media>a{
+    color: white;
+    transition: color .3s ease-in-out;
+}
+.footer-social-media>a:hover{
+    color: var(--orange);
 }
 
-.logo-f>img{
+.logo-f>a>img{
     width: 16rem;
+    cursor: pointer;
 }
 
 .blur-f-1 {
