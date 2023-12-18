@@ -1,20 +1,20 @@
 .scrollTopButton {
     background-color: var(--orange);
     color: var(--appColor);
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-radius: 1rem;
-    
+
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
-    padding: 12px;
-    opacity: 0;
     z-index: 3;
-    transition:  .4s ease-in-out;
-
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease-in-out;
 }
 
 .scrollTopButton.visible {
+    visibility: visible;
     opacity: 1;
 }
 
@@ -22,4 +22,5 @@
     display: flex;
     aling-items: center;
     justify-content: center;
+    padding: 1.5rem;
 }

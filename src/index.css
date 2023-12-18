@@ -23,13 +23,13 @@ a {
 }
 
 button {
-  /* Redefina as propriedades de estilo padrão */
+  background-color: transparent;
+  outline: none; 
   margin: 0;
   padding: 0;
   border: none;
   cursor: pointer;
-  outline: none; 
-  transition: filter .3s ease-in-out;
+  transition: filter .3s ease-in-out;  
 }
 
 button:hover {

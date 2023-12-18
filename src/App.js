@@ -6,7 +6,8 @@ import Reasons from './components/Reasons/Reasons';
 import Testimonials from './components/Testimonials/Testimonials';
 import Join from './components/Join/Join';
 import Footer from './components/Footer/Footer';
-import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton';
+import ScrollTopButton from './components/Buttons/ScrollTopButton/ScrollTopButton';
+import WhatsappButton from './components/Buttons/WhatsappButton/WhatsappButton';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Join/>
       <Footer/>
       <ScrollTopButton/>
+      <WhatsappButton/>
     </div>
   );
 }
