@@ -22,46 +22,87 @@
   }
 
   .category {
+    background: gray;
+    color: white;
+    padding: 3.2rem;
+    border-radius: 1.5rem;
+
     display: flex;
     flex-direction: column;
-    background-color: gray;
-    padding: 3.2rem;
-    gap: 1.6rem;
-    color: white;
     justify-content: space-between;
+    gap: 1.6rem;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .category::before {
+    background: var(--planCard);
+    position: absolute;
+    content: "";    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 1.5rem;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .5s linear;
+
+  }
+  .category:hover::before {
+    opacity: 1;
+  }
+
+  /*
+  .category:hover {
+    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    //color: var(--appColor);
+    //fill: var(--appColor);
+    cursor: pointer;
+  }*/
+  .category svg:hover {
+    //color: var(--appColor);
+
   }
 
   .category > :nth-child(1) {
-    width: 3.2rem;
-    height: 3.2rem;
+    /*3.2*/
+    width: 4rem;
+    height: 4rem;
     fill: white;
   }
 
   .category > :nth-child(2) {
     font-size: 1.6rem;
-    font: bold;
+    //font: bold;
+
+    font-size: 2rem;
+    font-weight: 700;
   }
 
   .category > :nth-child(3) {
-    font-size: 1.44rem;
+    font-size: 1.5rem;
     line-height: 1.5;
+
+    font-weight: 500;
   }
 
   .join-now {
     display: flex;
     align-items: center;
     gap: 3.2rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
   }
 
   .join-now > img {
     width: 1.6rem;
   }
 
-  .category:hover {
-    background: var(--planCard);
-    cursor: pointer;
-  }
+  
 
   @media screen and (max-width: 768px) {
     .programs-header {

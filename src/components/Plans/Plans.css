@@ -12,28 +12,58 @@
     align-items: center;
     justify-content: center;
     gap: 4.8rem;
+    
 
 }
 
 .plan {
-    display: flex;
-    flex-direction: column;
     background: var(--caloryCard);
     color: white;
-    gap: 3.2rem;
-    padding: 2.4rem;
     width: 28.8rem;
+    padding: 2.4rem;
+    border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    position: relative;
+    z-index: 1;
+    transition: .3s linear;
 }
 
-.plan:nth-child(2) {
-    background: var(--planCard);
+.plan:hover {
     transform: scale(1.1);
+}
+
+.plan::before {
+    background: var(--planCard);
+    position: absolute;
+    content: "";    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 1.5rem;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s linear;
+
+}
+.plan:hover::before {
+    opacity: 1;
 }
 
 .plan > svg {
     fill: var(--orange);
-    width: 3.2rem;
-    height: 3.2rem;
+    color: var(--orange);
+    width: 4rem;
+    height: 4rem;
+    transition: .5s linear;
+}
+
+.plan:hover > svg {
+    fill: white;
+    color: white;
 }
 
 .plan > :nth-child(2) {
@@ -65,15 +95,6 @@
 
 .feature > img {
     width: 1.6rem;
-
-}
-
-.plans > :nth-child(2) > svg {
-    fill: white;
-}
-
-.plans > :nth-child(2) > button {
-    color: orange;
 }
 
 .plans-blur-1 {

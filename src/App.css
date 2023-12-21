@@ -35,15 +35,11 @@
   padding: .8rem;
   font-weight: bold;
   border: .4rem solid transparent;
-  transition: 300ms all;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn:hover{
-  cursor: pointer;
-}
 
 .blur{
   background: rgba(253, 120, 43, 0.69);

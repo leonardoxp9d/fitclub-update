@@ -4,7 +4,6 @@
 
 html {
   font-size: 62.5%;
-  //border: 1px solid red;
 }
 
 body {
@@ -17,22 +16,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
 button {
-  background-color: transparent;
   outline: none; 
   margin: 0;
   padding: 0;
   border: none;
-  cursor: pointer;
-  transition: filter .3s ease-in-out;  
+  border-radius: 2rem;
+  transition: filter .4s ease-in-out;  
 }
 
 button:hover {
+  cursor: pointer;
   filter: brightness(.8);
 }
 
