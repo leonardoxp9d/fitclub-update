@@ -9,6 +9,10 @@ import adidas from "../../assets/adidas.png";
 import nike from "../../assets/nike.png";
 import tick from "../../assets/tick.png";
 
+import { SiJordan, SiNike,SiPuma } from "react-icons/si";
+import { CgAdidas } from "react-icons/cg";
+
+
 const Reasons = () => {
   return (
     <div className="Reasons" id="reasons">
@@ -59,9 +63,14 @@ const Reasons = () => {
         </span>
 
         <div className="partners">
+          {/*
           <img src={nb} alt="" />
           <img src={adidas} alt="" />
-          <img src={nike} alt="" />
+          <img src={nike} alt="" />*/}
+          <SiJordan />
+          <CgAdidas/>
+          <SiNike/>
+          <SiPuma/>
         </div>
 
       </div>

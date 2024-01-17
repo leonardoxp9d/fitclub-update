@@ -1,14 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback} from 'react';
 import './Testimonials.css';
 import { testimonialsData } from '../../data/testimonialsData';
-import leftArrow from '../../assets/leftArrow.png';
-import rightArrow from '../../assets/rightArrow.png';
 import { motion } from "framer-motion";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Testimonials = () => {
   const transition = { type: "spring", duration: 3 };
   const [selected, setSelected] = useState(0);
   const tLength = testimonialsData.length;
+
+  const backTestimonials = useCallback(() => {
+    setSelected((prev) => (prev === 0 ? tLength - 1 : prev - 1));
+  },[tLength]);
+
+  const nextTestimonials = useCallback(() => {
+    setSelected((prev) => (prev === tLength - 1 ? 0 : prev + 1));
+  },[tLength]);
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      nextTestimonials();
+    }, 5000);
+
+    return () => {
+      clearInterval(timerId);
+    };
+  }, [selected]);
 
   return (
     <div className="testimonials">
@@ -60,24 +77,8 @@ const Testimonials = () => {
         />
 
         <div className="arrows">
-          <img 
-            onClick={() => {
-              selected === 0
-                ? setSelected(tLength - 1)
-                : setSelected((prev => prev - 1));
-            }}
-            src={leftArrow} 
-            alt=""
-          />
-          <img 
-            onClick={() => {
-              selected === tLength -1
-                ? setSelected(0)
-                : setSelected((prev => prev + 1));
-            }}
-            src={rightArrow} 
-            alt="" 
-          />
+          <IoIosArrowBack onClick={backTestimonials}/>
+          <IoIosArrowForward onClick={nextTestimonials}/>
         </div>
       </div>
     </div>

@@ -1,120 +1,107 @@
-.Programs {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-    padding: 0 3.2rem;
-  }
+.programs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 0 3.2rem;
+}
 
+.programs-header {
+  display: flex;
+  gap: 8rem;
+  font-weight: bold;
+  font-size: 4.8rem;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.program-categories {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.category {
+  background: gray;
+  color: white;
+  padding: 3.2rem;
+  border-radius: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.category::before {
+  background: var(--planCard);
+  position: absolute;
+  content: "";    
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.5rem;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s linear;
+
+}
+.category:hover::before {
+  opacity: 1;
+}
+
+.category > :nth-child(1) {
+  width: 4rem;
+  height: 4rem;
+  fill: white;
+}
+
+.category > :nth-child(2) {
+  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  //font: bold;
+
+}
+
+.category > :nth-child(3) {
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+.join-now {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.7rem;
+
+  font-weight: 700;
+
+}
+
+.join-now > img {
+  width: 1.6rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
   .programs-header {
-    display: flex;
-    gap: 8rem;
-    font-weight: bold;
-    font-size: 4.8rem;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: x-large;
+    align-items: center;
     justify-content: center;
-    color: white;
-    text-transform: uppercase;
-    font-style: italic;
+    margin-top: 3.2rem;
   }
 
   .program-categories {
-    display: flex;
-    gap: 1.6rem;
-  }
-
-  .category {
-    background: gray;
-    color: white;
-    padding: 3.2rem;
-    border-radius: 1.5rem;
-
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1.6rem;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
   }
-
-  .category::before {
-    background: var(--planCard);
-    position: absolute;
-    content: "";    
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 1.5rem;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity .5s linear;
-
-  }
-  .category:hover::before {
-    opacity: 1;
-  }
-
-  /*
-  .category:hover {
-    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-    //color: var(--appColor);
-    //fill: var(--appColor);
-    cursor: pointer;
-  }*/
-  .category svg:hover {
-    //color: var(--appColor);
-
-  }
-
-  .category > :nth-child(1) {
-    /*3.2*/
-    width: 4rem;
-    height: 4rem;
-    fill: white;
-  }
-
-  .category > :nth-child(2) {
-    font-size: 1.6rem;
-    //font: bold;
-
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
-  .category > :nth-child(3) {
-    font-size: 1.5rem;
-    line-height: 1.5;
-
-    font-weight: 500;
-  }
-
-  .join-now {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-    font-size: 1.7rem;
-
-    font-weight: 700;
-
-  }
-
-  .join-now > img {
-    width: 1.6rem;
-  }
-
-  
-
-  @media screen and (max-width: 768px) {
-    .programs-header {
-      flex-direction: column;
-      gap: 1.6rem;
-      font-size: x-large;
-      align-items: center;
-      justify-content: center;
-      margin-top: 3.2rem;
-    }
-
-    .program-categories {
-      flex-direction: column;
-    }
-  }
+}

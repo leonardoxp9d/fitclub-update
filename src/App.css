@@ -23,14 +23,14 @@
   display: none;
 }
 /*Estilização dos texto que só tem contorno*/
-.stroke-text{
+.stroke-text {
   color: transparent;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-stroke-width: .1rem;
   -webkit-text-stroke-color: white;
 }
 
-.btn{
+.btn {
   background-color: white;
   padding: .8rem;
   font-weight: bold;
@@ -41,7 +41,7 @@
 }
 
 
-.blur{
+.blur {
   background: rgba(253, 120, 43, 0.69);
   position: absolute;
   border-radius: 50%;

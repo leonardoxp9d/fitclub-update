@@ -11,6 +11,7 @@
     flex-direction: column;
     text-transform: uppercase;
     color: white;
+
 }
 
 .left-t > :nth-child(1) {
@@ -49,6 +50,7 @@
     object-fit: cover;
     right: 12.8rem;
     top: 3.2rem;
+    border-radius: 2rem;
 }
 
 .right-t>:nth-child(1){
@@ -59,6 +61,7 @@
     background-color: transparent;
     right: 14.4rem;
     top: 1.44rem;
+    border-radius: 2rem;
 }
 
 .right-t>:nth-child(2){
@@ -68,19 +71,27 @@
     right: 11.2rem;
     top: 6.4rem;
     background: var(--planCard);
+    border-radius: 2rem;
 }
 
-.arrows{
+.arrows {
     display: flex;
-    gap: 1.6rem;
+    gap: 5rem;
     position: absolute;
-    bottom: 1.6rem;
-    left: 4.8rem;
+    bottom: 0;
 }
 
-.arrows>img{
-    width: 2.4rem;
+.arrows > svg {
+    width: 4.5rem;
+    height: 4.5rem;
     cursor: pointer;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.arrows > svg:hover {
+    cursor: pointer;
+    color: var(--orange);
 }
 
 @media screen and (max-width: 768px) {

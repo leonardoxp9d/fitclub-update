@@ -4,7 +4,10 @@
 }
 
 .logo{
+    /*
     width: 16rem;
+    height: 4.8rem;*/
+    width: 17rem;
     height: 4.8rem;
 }
 
@@ -21,12 +24,30 @@
 
 .header-menu>li{
     color: white;
+    position: relative;
     transition: color .3s ease-in-out;
+    //border: 1px solid red;
 }
 
 .header-menu>li:hover {
     color: var(--orange);
     cursor: pointer;
+}
+
+/*efeito borda dinamica*/
+.header-menu>li::after {
+    content: "";
+    width: 0%;
+    height: .2rem;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .2s ease-in-out;
+}
+
+.header-menu>li:hover::after {
+    width: 105%;
 }
 
 .header-social-media {
