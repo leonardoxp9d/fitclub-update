@@ -19,9 +19,6 @@
   overflow: hidden;
 }
 
-::-webkit-scrollbar{
-  display: none;
-}
 /*Estilização dos texto que só tem contorno*/
 .stroke-text {
   color: transparent;
@@ -40,7 +37,6 @@
   justify-content: center;
 }
 
-
 .blur {
   background: rgba(253, 120, 43, 0.69);
   position: absolute;
@@ -49,4 +45,25 @@
   z-index: -9;
 }
 
+*::-webkit-scrollbar {
+  width: 1.2rem;
+}
 
+*::-webkit-scrollbar-track {
+  background-color: var(--appColor);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+  border: .3rem solid var(--appColor); 
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(244,137,21, .8);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgb(244,137,21, .5);
+
+}

@@ -14,7 +14,6 @@
 
 .left-r > img {
     object-fit: cover;
-    //border: 1px solid blue;
     border-radius: 1.5rem;
 }
 
@@ -22,24 +21,18 @@
     width: 19.2rem;
     grid-row: 1/3;
     height: 44.8rem;
-    //border: 1px solid blue;
-
 }
 
 .left-r>:nth-child(2){
     width: auto;
     height: 25.6rem;
     grid-column: 2/4;
-    //border: 1px solid yellow;
-
 }
 
 .left-r>:nth-child(3){
     width: 22.4rem;
     grid-column: 2/3;
     grid-row: 2;
-    //border: 1px solid green;
-
 }
 
 .left-r>:nth-child(4){
@@ -47,10 +40,9 @@
     grid-row: 2;
     grid-column: 3/4;
     height: 17.92rem;
-    //border: 1px solid white;
 }
 
-.right-r{
+.right-r {
     flex: 1 1;
     text-transform: uppercase;
     gap: 1.6rem;
@@ -80,36 +72,55 @@
     display: flex;
     font-size: 1.6rem;
     gap: 1.6rem;
-    ///align-items: center ideia; 
+    align-items: center; 
 }
 
 .details-r > div > img{
     width: 3.2rem;
     height: 3.2rem;
-    //border: 1px solid;
 }
-
 
 .partners{
     display: flex;
-    gap: 1.6rem;
+    gap: 2.5rem;
 }
 
-.partners > svg {
+.partners .partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.partners .partner .partner-logo {
     width: 4.5rem;
     height: 4.5rem;
     color: var(--gray);
     transition: color .4s ease-in-out;
-    ///border: 1px solid;
 }
 
-.partners > svg:hover {
-    cursor: pointer;
+.partners .partner .partner-logo:hover {
     color: var(--orange);
-    ///border: 1px solid;
+    cursor: pointer;
 }
 
+.partners .partner .partner-name {
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: -4rem;
+    opacity: 0;    
+    transition: all .4s ease-in-out;
+}
 
+.partners .partner:hover .partner-name {
+    color: var(--orange);
+    cursor: pointer;
+    opacity: 1;
+    bottom: -1.7rem;
+}
 
 @media screen and (max-width: 768px) {
     .Reasons {
@@ -138,7 +149,5 @@
     .left-r > :nth-child(4) {
         width: 11.2rem;
         height: 9.6rem;
-    }
-
-    
+    }    
 }

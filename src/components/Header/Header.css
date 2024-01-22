@@ -17,16 +17,16 @@
     gap: 3.2rem;
     font-size: 1.6rem;
     font-weight: 500;
-    //border: 1px solid red;
-    /**/
-    //margin-left: 10rem;
+    /*
+    border: 1px solid red;
+    //margin-left: 10rem;*/
 }
 
 .header-menu>li{
     color: white;
     position: relative;
     transition: color .3s ease-in-out;
-    //border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .header-menu>li:hover {
