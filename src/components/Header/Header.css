@@ -1,69 +1,198 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 2rem 3.2rem;
 }
 
-.logo{
-    /*
-    width: 16rem;
-    height: 4.8rem;*/
+.logo {
     width: 17rem;
     height: 4.8rem;
 }
 
-.header-menu{
-    list-style: none;
+.menu {
     display: flex;
-    gap: 3.2rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    /*
-    border: 1px solid red;
-    //margin-left: 10rem;*/
+    align-items: center;
+    position: relative;
 }
 
-.header-menu>li{
+.menu .menu-content {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    gap: 5rem;
+    margin-right: 12rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.menu-list > li {
     color: white;
     position: relative;
     transition: color .3s ease-in-out;
-    /*border: 1px solid red;*/
 }
 
-.header-menu>li:hover {
+.menu-list > li:hover {
     color: var(--orange);
     cursor: pointer;
 }
 
 /*efeito borda dinamica*/
-.header-menu>li::after {
+.menu-list > li::after {
     content: "";
-    width: 0%;
-    height: .2rem;
     background-color: var(--orange);
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 0%;
+    height: .2rem;
     transition: .2s ease-in-out;
 }
 
-.header-menu>li:hover::after {
-    width: 105%;
+.menu-list > li:hover::after {
+    width: 100%;
 }
+/*------*/
 
-.header-social-media {
+.social-media {
     list-style: none;
     display: flex;
-    font-size: 1.8rem;
     gap: 2.2rem;
+    gap: 5rem;
 }
 
-.header-social-media>li {
+.social-media > li {
+    font-size: 2rem;
     color: white;
     transition: color .3s ease-in-out;
 }
 
-.header-social-media>li:hover {
-    color: var(--orange);
+.social-media > li:hover {
+    color: var(--appColor);
+}
+
+/*----Menu hamburguer----*/
+.menu .menu-faketrigger {
+    display: none;
+}
+
+.menu .menu-toggle {
+    display: none;
+}
+/*-------*/
+
+
+
+@media screen and (max-width: 1200px) {
+    .menu .menu-faketrigger {
+        display: flex;
+        position: fixed;
+        right: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        cursor: pointer;
+        z-index: 1000;
+        opacity: 0;
+    }
+
+    .menu .menu-toggle {
+        display: block;
+        position: fixed;
+        right: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        z-index: 999;
+        cursor: pointer;
+    }
+    
+    .menu-toggle span {
+        background-color: white; 
+        display: block;
+        width: 3.5rem;
+        height: .5rem;
+        margin-bottom: 1rem;
+        border-radius: .3rem;
+        transition: all .3s ease-in-out;
+    }
+
+    .menu-faketrigger:hover ~ .menu-toggle span{
+        filter: brightness(.8);
+    }  
+
+    .menu-faketrigger:checked ~ .menu-toggle span {
+        background-color: var(--orange);
+    }
+    
+    .menu-faketrigger:checked ~ .menu-toggle span:nth-child(1) {
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) scaleX(1.25);
+    }
+    
+    .menu-faketrigger:checked ~ .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-faketrigger:checked ~ .menu-toggle span:nth-child(3) {
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scaleX(1.25);
+    }   
+
+    .menu-content {
+        background-color: var(--appColor);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0rem;
+        right: -30rem;
+        width: 30rem;
+        height: 100vh;
+        padding: 5rem 0 0 0;
+        gap: 7rem;
+        transition: all .4s ease-in-out;
+    }
+
+    .menu-faketrigger:checked ~.menu-content {
+        right: 0;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-media {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-media > li:hover {
+        color: var(--orange);
+    }
+
+    .effect-open-menu {
+        position: relative;
+        pointer-events: none; 
+    }
+
+    .effect-open-menu::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        animation: shadow .4s ease-in-out forwards;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -71,11 +200,21 @@
         position: fixed;
         right: 3.2rem;
         z-index: 99;
-        /* Não e necessário ter essas propriedades aqui e so colocar tudo no .header-menu*/
+        /* Não e necessário ter essas propriedades aqui e so colocar tudo no .menu-list*/
     }
-    .header-menu {
+    .menu-list {
         flex-direction: column;
         background-color: var(--appColor);
         padding: 3.2rem;
+    }
+}
+
+/*----------Animations------------*/
+@keyframes shadow {
+    0% {
+        background: rgba(0, 0, 0, 0); /* Começa com opacidade zero */
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.5); /* Termina com opacidade total (0.5) */
     }
 }

@@ -50,13 +50,13 @@
     flex-direction: column;
 }
 
-.right-r>span{
+.right-r > span{
     font-weight: bold;
     color: var(--orange);
     font-size: 1.6rem;
 }
 
-.right-r>div{
+.right-r > div{
     color: white;
     font-size: 4.8rem;
     font-weight: bold;
@@ -131,6 +131,72 @@
         grid-auto-rows: auto;
         overflow: hidden;
     }
+}
+
+@media screen and (max-width: 560px) {
+    .left-r > :nth-child(1) {
+        width: 11.2rem;
+        height: 27.2rem;
+    }
+
+    .left-r > :nth-child(2) {
+        width: 24rem;
+        height: 16rem;
+    }
+
+    .left-r > :nth-child(3) {
+        width: 11.2rem;
+    }
+
+    .left-r > :nth-child(4) {
+        width: 11.2rem;
+        height: 9.6rem;
+    } 
+}
+
+@media screen and (max-width: 350px) {
+    .left-r > :nth-child(1) {
+        width: 11.2rem;
+        height: 27.2rem;
+    }
+
+    .left-r > :nth-child(2) {
+        width: 24rem;
+        height: 16rem;
+
+        width: 18rem;
+        height: 16rem;
+    }
+
+    .left-r > :nth-child(3) {
+        width: 11.2rem;
+        width: 8rem;
+        height: 9.5rem;
+    }
+
+    .left-r > :nth-child(4) {
+        width: 11.2rem;
+        height: 9.6rem;
+
+        width: 8rem;
+        height: 9.5rem;
+    }
+    
+    .right-r > div{
+        font-size: 3rem;
+    }    
+}
+
+/*
+@media screen and (max-width: 768px) {
+    .Reasons {
+        flex-direction: column;
+    }
+
+    .left-r {
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
 
     .left-r > :nth-child(1) {
         width: 11.2rem;
@@ -151,3 +217,4 @@
         height: 9.6rem;
     }    
 }
+*/

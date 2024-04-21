@@ -1,5 +1,8 @@
 import React from 'react'
 import Header from '../Header/Header';
+import ScrollTopButton from '../Buttons/ScrollTopButton/ScrollTopButton';
+import WhatsappButton from '../Buttons/WhatsappButton/WhatsappButton';
+
 import './Hero.css';
 import hero_image from '../../assets/hero_image.png';
 import hero_image_back from '../../assets/hero_image_back.png';
@@ -17,9 +20,9 @@ const Hero = () => {
       <div className="blur hero-blur"></div>
       
       {/*<Header/>*/}
-
       <div className="left-h">
-        <Header/>
+      
+        {/*<Header/>*/}
         {/* the best ad */}
         <div className="the-best-ad">
           <motion.div
@@ -80,7 +83,7 @@ const Hero = () => {
       </div>
 
       <div className="right-h">
-        <button className="btn">Join Now</button>
+        {/*<button className="btn">Join Now</button> */}
 
         <motion.div 
           initial={{ right: "-1.6rem" }}

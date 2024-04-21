@@ -11,7 +11,6 @@
     flex-direction: column;
     text-transform: uppercase;
     color: white;
-
 }
 
 .left-t > :nth-child(1) {
@@ -26,7 +25,7 @@
     font-size: 4.8rem;
 }
 
-.left-t>:nth-child(4){
+.left-t >:nth-child(4){
     text-transform: none;
     text-align: justify;
     letter-spacing: .2rem;
@@ -34,7 +33,7 @@
     font-size: 1.6rem;
 }
 
-.left-t>:nth-child(5){
+.left-t >:nth-child(5){
     font-size: 1.6rem;
 }
 
@@ -43,33 +42,33 @@
     position: relative;
 }
 
-.right-t>img{
+.right-t > img {
     position: absolute;
     width: 27.2rem;
     height: 32rem;
     object-fit: cover;
-    right: 12.8rem;
-    top: 3.2rem;
+    top: 2rem;
+    right: 7.8rem;
     border-radius: 2rem;
 }
 
-.right-t>:nth-child(1){
+.right-t>:nth-child(1) {
     position: absolute;
     width: 27.2rem;
     height: 32rem;
     border: .2rem solid orange;
     background-color: transparent;
-    right: 14.4rem;
-    top: 1.44rem;
-    border-radius: 2rem;
+    right: 9.4rem;
+    top: .5rem;
+    border-radius: 2rem;    
 }
 
 .right-t>:nth-child(2){
     position: absolute;
     width: 27.2rem;
     height: 30.4rem;
-    right: 11.2rem;
-    top: 6.4rem;
+    top: 5rem;
+    right: 6.2rem;
     background: var(--planCard);
     border-radius: 2rem;
 }
@@ -77,8 +76,9 @@
 .arrows {
     display: flex;
     gap: 5rem;
-    position: absolute;
-    bottom: 0;
+    position: absolute;    
+    left: -7rem;
+    bottom: -2rem;
 }
 
 .arrows > svg {
@@ -94,6 +94,46 @@
     color: var(--orange);
 }
 
+@media screen and (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .right-t {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+    }
+
+    .right-t > div {
+        position: relative;
+        display: none;
+    }
+
+    .right-t > img {
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+
+    .right-t > :last-child {
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .left-t>:nth-child(2),
+    .left-t>:nth-child(3) {
+        font-size: 3.5rem;
+    }
+}
+
+/*
 @media screen and (max-width: 768px) {
     .testimonials {
         flex-direction: column;
@@ -130,3 +170,4 @@
         left: 0;
     }
 }
+*/

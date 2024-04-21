@@ -1,13 +1,12 @@
 .scrollTopButton {
     background-color: var(--orange);
     color: var(--appColor);
-    font-size: 2rem;
-    border-radius: 1rem;
-
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
     z-index: 3;
+    font-size: 2rem;
+    border-radius: 1rem;
     visibility: hidden;
     opacity: 0;
     transition: .4s ease-in-out;

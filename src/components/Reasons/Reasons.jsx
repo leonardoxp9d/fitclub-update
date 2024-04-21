@@ -58,9 +58,15 @@ const Reasons = () => {
         </span>
 
         <div className="partners">
+          {/*}
           <div className="partner">
             <SiJordan className="partner-logo"/>
             <span className="partner-name">Jordan</span>
+          </div> */}
+
+          <div className="partner">
+            <SiNike className="partner-logo"/>
+            <span className="partner-name">Nike</span>
           </div>
 
           <div className="partner">
@@ -68,18 +74,13 @@ const Reasons = () => {
             <span className="partner-name">Adidas</span>
           </div>
 
-          <div className="partner">
-            <SiNike className="partner-logo"/>
-            <span className="partner-name">Nike</span>
-          </div>
+          
           
           <div className="partner">
             <SiPuma className="partner-logo"/>
             <span className="partner-name">Puma</span>
-          </div>
-          
+          </div>          
         </div>
-
       </div>
     </div>
   )

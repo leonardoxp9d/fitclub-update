@@ -3,6 +3,8 @@ import './Programs.css';
 import {programsData} from '../../data/programsData';
 import RightArrow from '../../assets/rightArrow.png';
 
+import { IoIosArrowForward, IoIosArrowDropright } from "react-icons/io";
+
 const Programs = () => {
   return (
     <div className="programs-container" id="programs">
@@ -20,7 +22,8 @@ const Programs = () => {
             <span>{program.details}</span>
             <div className="join-now">
               <span>Join Now</span>
-              <img src={RightArrow} alt="" />
+              {/*<img src={RightArrow} alt="" />*/}              
+              <IoIosArrowForward />
             </div>
           </div>
         )}

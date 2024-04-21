@@ -16,6 +16,12 @@
     color: white;
     text-transform: uppercase;
     font-style: italic;
+
+    /**/
+    text-align: center;
+
+    /*border: 1px solid red;*/
+
 }
 
 .plans {
@@ -87,6 +93,8 @@
 
 .plan > :nth-child(5) {
     font-size: 1.28rem;
+    font-size: 1.5rem;
+    //border: 1px solid red;
 }
 
 .features {
@@ -123,6 +131,27 @@
     .plans-header {
         flex-direction: column;
         gap: 1.6rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+    
+    .plans {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .plans-header {
+        font-size: 3rem;
+    }
+}
+
+/*
+@media screen and (max-width: 768px) {
+    .plans-header {
+        flex-direction: column;
+        gap: 1.6rem;
         font-size: x-large;
         align-items: center;
         justify-content: center;
@@ -136,3 +165,4 @@
         transform: none;
     }
 }
+*/

@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Plans from './components/Plans/Plans';
 import Programs from './components/Programs/Programs';
@@ -11,7 +12,9 @@ import WhatsappButton from './components/Buttons/WhatsappButton/WhatsappButton';
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <Header/>
+    <div className="Container">
       <Hero/>
       <Programs/>
       <Reasons/>
@@ -22,6 +25,7 @@ function App() {
       <ScrollTopButton/>
       <WhatsappButton/>
     </div>
+    </>
   );
 }
 

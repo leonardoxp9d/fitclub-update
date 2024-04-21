@@ -1,18 +1,17 @@
 .whatsappButton {
     background-color: var(--orange);
     color: var(--appColor);
-    font-size: 4rem;
-    border-radius: 1rem;
-    
     position: fixed;
     bottom: 1.5rem;
     left: 1.5rem;
+    font-size: 4rem;
+    border-radius: 1rem;
     z-index: 3;
 }
 
 .whatsappButton > a {
     display: flex;
-    aling-items: center;
+    align-items: center;
     justify-content: center;
     padding: .5rem;
 }

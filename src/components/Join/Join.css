@@ -1,19 +1,18 @@
-.Join{
+.Join {
     display: flex;
     padding: 0 3.2rem;
     gap: 16rem;
 }
 
-.left-j{
+.left-j {
     color: white;
     font-size: 4.8rem;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    
 }
 
-.left-j>hr{
+.left-j > hr {
     position: absolute;
     width: 16.8rem;
     border: .2rem solid var(--orange);
@@ -21,53 +20,72 @@
     margin: -1rem 0;
 }
 
-.left-j>div {
+.left-j > div {
     display: flex;
     gap: 1.6rem;
 }
 
-.right-j{
+.right-j {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.email-container{
+.email-container {
+    background-color: gray;
     display: flex;
-    gap: 4.8rem;
-    background: gray;
+    justify-content: space-between;
     padding: 1.6rem 3.2rem;
     border-radius: 1rem;
-
+    width: 100%;
+    gap: 2rem;
 }
 
-.email-container>input{
+.email-container > input {
     background-color: transparent;
+    color: var(--lightgray);
     border: none;
     outline: none;
-    color: var(--lightgray);
 }
 
-::placeholder{
+::placeholder {
     color: var(--lightgray);
+    font-size: 1.4rem;
 }
 
 .btn-j {
     background-color: var(--orange);
     color: white;
-    //border-radius: 1rem;
+    font-size: 1.4rem;
+    border-radius: 0rem;
 }
 
 @media screen and (max-width: 768px) {
     .Join {
         flex-direction: column;
-        gap: 1.6rem;
+        gap: 3.2rem;
+        align-items: center;
     }
+}
+
+@media screen and (max-width: 350px) {
     .left-j {
-        font-size: x-large;
+        font-size: 3rem;
         flex-direction: column;
     }
-    .right-j {
-        padding: 3.2rem;
+
+    .right-j{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .email-container {
+        width: 90%;     
+
+    }
+    
+    .email-container > input {
+        width: 50%;
     }
 }
