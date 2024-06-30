@@ -1,12 +1,8 @@
 import React from 'react'
-import Header from '../Header/Header';
-import ScrollTopButton from '../Buttons/ScrollTopButton/ScrollTopButton';
-import WhatsappButton from '../Buttons/WhatsappButton/WhatsappButton';
-
 import './Hero.css';
 import hero_image from '../../assets/hero_image.png';
 import hero_image_back from '../../assets/hero_image_back.png';
-import Heart from '../../assets/heart.png';
+import { PiHeartbeatFill } from "react-icons/pi";
 import Calories from '../../assets/calories.png';
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
@@ -22,8 +18,6 @@ const Hero = () => {
       {/*<Header/>*/}
       <div className="left-h">
       
-        {/*<Header/>*/}
-        {/* the best ad */}
         <div className="the-best-ad">
           <motion.div
             initial={{ left: mobile? "17.8rem" : "23.8rem"}}
@@ -51,7 +45,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* figures */}
         <div className="figures">
           <div>
             <span>
@@ -75,7 +68,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* hero buttons */}
         <div className="hero-buttons">
           <button className="btn">Get Started</button>
           <button className="btn">Learn More</button>
@@ -83,37 +75,35 @@ const Hero = () => {
       </div>
 
       <div className="right-h">
-        {/*<button className="btn">Join Now</button> */}
 
         <motion.div 
           initial={{ right: "-1.6rem" }}
           whileInView={{ right: "6.4rem" }}
           transition={ transition }
           className='heart-rate'>
-          <img src={Heart} alt=""/>
+          <PiHeartbeatFill aria-label="heart image"/>
+
           <span>Heart Rate</span>
           <span>116 bpm</span>
         </motion.div>
 
-        {/* hero images */}
-        <img src={hero_image} alt="" className="hero-image" />
+        <img src={hero_image} alt="image of a personal trainer" className="hero-image" />
 
         <motion.img 
           initial={{ right: "17.6rem" }}
           whileInView={{ right: "32rem" }}
           transition={transition}
           src={hero_image_back} 
-          alt="" 
+          alt="image of 2 curved lines" 
           className="hero-image-back" 
         />
 
-        {/* calories */}
         <motion.div
           initial={{ right: "59.2rem" }}
           whileInView={{ right: "44.8rem" }}
           transition={ transition } 
           className="calories">
-          <img src={Calories} alt=""/>
+          <img src={Calories} alt="image of a fictional calorie graph"/>
 
           <div>
             <span>Calories Burned</span>
@@ -125,4 +115,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

@@ -1,9 +1,7 @@
 import React from 'react';
 import './Programs.css';
 import {programsData} from '../../data/programsData';
-import RightArrow from '../../assets/rightArrow.png';
-
-import { IoIosArrowForward, IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Programs = () => {
   return (
@@ -22,8 +20,7 @@ const Programs = () => {
             <span>{program.details}</span>
             <div className="join-now">
               <span>Join Now</span>
-              {/*<img src={RightArrow} alt="" />*/}              
-              <IoIosArrowForward />
+              <IoIosArrowForward aria-label="right arrow icon"/>
             </div>
           </div>
         )}

@@ -6,25 +6,6 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 1024px) {
-  html{
-    font-size: 52.5%;
-  }
-}
-
-/*
-@media (min-width: 1920px) {
-  html{
-      font-size: 82.5%;
-  }
-}
-@media (min-width: 3840px) {
-  html{
-      font-size: 202.5%;
-  }
-}
-*/
-
 body {
   margin: 0;
   padding: 0; 
@@ -60,4 +41,8 @@ code {
     monospace;
 }
 
-
+@media (max-width: 1024px) {
+  html{
+    font-size: 52.5%;
+  }
+}

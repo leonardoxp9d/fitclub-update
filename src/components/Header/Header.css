@@ -200,21 +200,21 @@
         position: fixed;
         right: 3.2rem;
         z-index: 99;
-        /* Não e necessário ter essas propriedades aqui e so colocar tudo no .menu-list*/
     }
     .menu-list {
         flex-direction: column;
         background-color: var(--appColor);
         padding: 3.2rem;
+
     }
 }
 
 /*----------Animations------------*/
 @keyframes shadow {
     0% {
-        background: rgba(0, 0, 0, 0); /* Começa com opacidade zero */
+        background: rgba(0, 0, 0, 0); 
     }
     100% {
-        background: rgba(0, 0, 0, 0.5); /* Termina com opacidade total (0.5) */
+        background: rgba(0, 0, 0, 0.5);
     }
 }

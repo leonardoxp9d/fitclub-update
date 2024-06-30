@@ -14,8 +14,6 @@
   color: white;
   text-transform: uppercase;
   font-style: italic;
-
-  /**/
   text-align: center;
 }
 
@@ -131,20 +129,3 @@
     font-size: 3.5rem;
   }
 }
-
-/*
-@media screen and (max-width: 1024px) {
-  .programs-header {
-    flex-direction: column;
-    gap: 1.6rem;
-    font-size: xx-large;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3.2rem;
-  }
-
-  .program-categories {
-    flex-direction: column;
-  }
-}
-*/

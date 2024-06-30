@@ -77,12 +77,12 @@ const Testimonials = () => {
         />
 
         <div className="arrows">
-          <IoIosArrowBack onClick={backTestimonials}/>
-          <IoIosArrowForward onClick={nextTestimonials}/>
+          <IoIosArrowBack onClick={backTestimonials} aria-label="back testimonials button"/>
+          <IoIosArrowForward onClick={nextTestimonials} aria-label="next testimonials button"/>
         </div>
       </div>
     </div>
   )
 }
 
-export default Testimonials
+export default Testimonials;

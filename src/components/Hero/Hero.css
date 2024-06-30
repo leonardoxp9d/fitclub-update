@@ -1,32 +1,24 @@
-.hero{
+.hero {
     display:flex;
     justify-content: space-between;
-    /*border: 1px solid red;*/
-    //border: 1px solid blue;
 }
 
-.left-h{
-    padding: 3.2rem;
-    padding-top: 2.4rem;
+.left-h {
+    padding: 12rem 2.4rem 0 2.4rem;
     flex:3;
     display: flex;
     gap: 3.2rem;
     flex-direction: column;
-    
-    /*--*/
     z-index: 1;
-    padding-top: 12rem;
-    padding: 12rem 2.4rem 0 2.4rem;
-    //border: 1px solid red;
 }
 
-.right-h{
+.right-h {
     flex:1;
     position: relative;
     background-color: var(--orange);
 }
 
-.the-best-ad{
+.the-best-ad {
     margin-top: 6.4rem;
     background-color: #363d42;
     border-radius: 6.4rem;
@@ -39,14 +31,13 @@
     align-items: center;
     justify-content: flex-start;
     font-size: 1.6rem;
-    //border: 1px solid blue;
 }
 
-.the-best-ad>span{
+.the-best-ad > span {
     z-index: 2;
 }
 
-.the-best-ad>div{
+.the-best-ad > div {
     position: absolute;
     background-color: var(--orange);
     width: 8.64rem;
@@ -56,7 +47,7 @@
     z-index: 1;
 }
 
-.hero-text{
+.hero-text {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -67,7 +58,7 @@
     text-overflow: inherit;
 }
 
-.hero-text>div:nth-of-type(3){
+.hero-text > div:nth-of-type(3) {
     font-size: 1.6rem;
     font-weight: 200;
     text-transform: none;
@@ -75,41 +66,40 @@
     width: 80%;
 }
 
-.figures{
+.figures {
     display: flex;
     gap: 3.2rem;
 }
 
-.figures>div{
+.figures > div {
     display: flex;
     flex-direction: column;
 }
 
-.figures>div>span:nth-of-type(1){
+.figures > div > span:nth-of-type(1) {
     color: white;
     font-size: 3.2rem;
 }
 
-.figures>div>span:nth-of-type(2){
+.figures > div > span:nth-of-type(2) {
     color: var(--gray);
     text-transform: uppercase;
     font-size: 1.6rem;
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
     gap: 1.6rem;
 }
   
-.hero-buttons>:nth-child(1){
+.hero-buttons >:nth-child(1){
     color: white;
     background-color: var(--orange);
     width: 10.6rem;
     font-size: 1.4rem;    
-    /**/
 }
   
-.hero-buttons>:nth-child(2){
+.hero-buttons > :nth-child(2) {
     color: white;
     background-color: transparent;
     width: 10.6rem;
@@ -118,15 +108,14 @@
 
 }
 
-.right-h>.btn{
+.right-h > .btn {
     position: absolute;
     right: 4.8rem;
     top: 3.2rem;
     color: black;
-    //display: none;
 }
 
-.heart-rate{
+.heart-rate {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -141,28 +130,29 @@
     font-size: 1.6rem;
 }
 
-.heart-rate>img{
-    width: 3.2rem;
+.heart-rate > svg {
+    width: 4rem;
+    height: 4rem;
+    fill: #fa573c;
 }
 
-.heart-rate>:nth-child(2){
+.heart-rate > :nth-child(2) {
     color: var(--gray);
 }
 
-.heart-rate>:nth-child(3){
+.heart-rate > :nth-child(3) {
     color: white;
     font-size: 2.4rem;
 }
 
-.hero-image{
+.hero-image {
     position: absolute;
     top: 16rem;
     right: 12.8rem;
     width: 36.8rem;
-    /*z-index: -1;*/
 }
 
-.hero-image-back{    
+.hero-image-back {    
     position: absolute;
     top: 6.4rem;
     right: 32rem;
@@ -170,7 +160,7 @@
     z-index: -2;
 }
 
-.calories{
+.calories {
     display: flex;
     gap: 3.2rem;
     background-color: var(--caloryCard);
@@ -179,8 +169,6 @@
     width: fit-content;
     position: absolute;
     top: 53.2rem;
-    //right: 44.8rem;    
-    //border: 1px solid red;
 }
 
 .calories > img {
@@ -203,14 +191,14 @@
     font-size: 2.4rem;
 }
 
-.hero-blur{
+.hero-blur {
     width: 35.2rem;
     height: 48rem;
     left: 0;
 }
 
 @media screen and (max-width: 1180px) {
-    .calories{
+    .calories {
         left: 2rem;
     }
 }
@@ -224,13 +212,10 @@
         width: 22.4rem;
     }
 
-    /*-----*/
     .left-h {
         align-items: center;
         justify-content: center;
-        //border: blue 1px solid;
     }
-    /*----*/
 
     .the-best-ad {
         margin-top: 0;
@@ -239,8 +224,7 @@
         transform: scale(0.8);
     }
 
-    .hero-text{
-        //font-size: 5rem;
+    .hero-text {
         align-items: center;
         justify-content: center;
     }
@@ -252,19 +236,19 @@
         text-align: center;
     }
 
-    .figures{
+    .figures {
         text-align: center;
     }
 
-    .figures > div > span:nth-of-type(1){
+    .figures > div > span:nth-of-type(1) {
         font-size: large;
     }
 
-    .figures > div > span:nth-of-type(2){
+    .figures > div > span:nth-of-type(2) {
         font-size: small;
     }
 
-    .hero-buttons{
+    .hero-buttons {
         justify-content: center;
     }
 
@@ -284,219 +268,3 @@
         font-size: 4.8rem;
     }
 }
-
-
-
-    /*
-    .heart-rate {
-        left: 1.6rem;
-        top: 3.2rem;
-        display: none;
-    }
-
-    .calories {
-        position: relative;
-        top: 8rem;
-        left: 3.2rem;
-        display: none;
-    }
-
-    .calories> img {
-        width: 3.2rem;
-    }
-
-    .calories > div > :nth-child(2){
-        color: white;
-        font-size: 1.6rem;
-    }
-
-    .hero-image {
-        position: relative;
-        width: 24rem;
-        left: 11.2rem;
-        top: 6.4rem;
-        align-self: center;
-        width: 20rem;
-    }
-
-    .hero-image-back{
-        width: 24rem;
-        left: 3.2rem;
-        top: 0rem;
-        width: 20rem;
-    }
-    */
-
-/*1024*/
-/*
-  @media screen and (max-width: 1024px) {
-    .hero {
-        flex-direction: column;
-    }
-    
-    .hero-blur {
-        width: 22.4rem;
-    }
-
-    .the-best-ad {
-        margin-top: 0;
-        font-size: small;
-        align-items: center;
-        transform: scale(0.8);
-    }
-
-    .hero-text{
-        font-size: xx-large;
-        align-items: center;
-        justify-content: center;
-
-        font-size: 4.5rem;
-    }
-
-    .hero-text > div:nth-of-type(3){
-        font-size: small;
-        font-weight: 200;
-        letter-spacing: .1rem;
-        text-align :center;
-    }
-    .figures > div > span:nth-of-type(1){
-        font-size: large;
-    }
-
-    .figures > div > span:nth-of-type(2){
-        font-size: small;
-    }
-
-    .hero-buttons{
-        justify-content: center;
-    }
-
-    .right-h {
-        position: absolute;
-        background: none;
-        right: 14rem;
-        top: 10rem;
-        z-index: -1;
-    }
-
-    .heart-rate {
-        left: 1.6rem;
-        top: 3.2rem;
-        display: none;
-    }
-
-    .calories {
-        position: relative;
-        top: 8rem;
-        left: 3.2rem;
-        display: none;
-    }
-
-    .calories> img {
-        width: 3.2rem;
-    }
-
-    .calories > div > :nth-child(2){
-        color: white;
-        font-size: 1.6rem;
-    }
-
-    .hero-image {
-        position: relative;
-        width: 24rem;
-        left: 11.2rem;
-        top: 6.4rem;
-        align-self: center;
-        width: 20rem;
-    }
-
-    .hero-image-back{
-        width: 24rem;
-        left: 3.2rem;
-        top: 0rem;
-        width: 20rem;
-    }
-  }
-*/
-
-/*768
-@media screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-    }
-    
-    .hero-blur {
-        width: 22.4rem;
-    }
-
-    .the-best-ad {
-        margin-top: 0;
-        font-size: small;
-        align-items: center;
-        transform: scale(0.8);
-    }
-
-    .hero-text{
-        font-size: xx-large;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-text > div:nth-of-type(3){
-        font-size: small;
-        font-weight: 200;
-        letter-spacing: .1rem;
-        text-align :center;
-    }
-    .figures > div > span:nth-of-type(1){
-        font-size: large;
-    }
-
-    .figures > div > span:nth-of-type(2){
-        font-size: small;
-    }
-
-    .hero-buttons{
-        justify-content: center;
-    }
-
-    .right-h {
-        position: relative;
-        background: none;
-    }
-
-    .heart-rate {
-        left: 1.6rem;
-        top: 3.2rem;
-    }
-
-    .calories {
-        position: relative;
-        top: 8rem;
-        left: 3.2rem;
-    }
-
-    .calories> img {
-        width: 3.2rem;
-    }
-
-    .calories > div > :nth-child(2){
-        color: white;
-        font-size: 1.6rem;
-    }
-
-    .hero-image {
-        position: relative;
-        width: 24rem;
-        left: 11.2rem;
-        top: 6.4rem;
-        align-self: center;
-    }
-
-    .hero-image-back{
-        width: 24rem;
-        left: 3.2rem;
-        top: 0rem;
-    }
-  }
-  */

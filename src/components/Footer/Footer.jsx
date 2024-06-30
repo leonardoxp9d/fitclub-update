@@ -13,19 +13,19 @@ const Footer = () => {
             <div className="footer">
                 <div className="footer-social-media">
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <FaFacebookF/>
+                        <FaFacebookF aria-label="facebook button" />
                     </a>
 
                     <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                        <FaXTwitter/>
+                        <FaXTwitter aria-label="twitter button" />
                     </a>
                     
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram/>
+                        <FaInstagram aria-label="instagram button" />
                     </a>
                     
                     <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
-                        <FaTiktok/>
+                        <FaTiktok aria-label="tiktok button"/>
                     </a>
                 </div>    
                 <div className="logo-f">

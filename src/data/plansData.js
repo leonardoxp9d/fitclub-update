@@ -1,17 +1,11 @@
-import { TfiCrown } from "react-icons/tfi";
-import { RiVipCrownFill } from "react-icons/ri";
-import { PiCrownSimpleFill } from "react-icons/pi";
 import { LuCrown } from "react-icons/lu";
-
-import { FaHeartPulse } from "react-icons/fa6";
-import { GiHeartPlus, GiCentaurHeart } from "react-icons/gi";
-import { FaCrown } from "react-icons/fa6";
-import { CgGym, CgAdidas } from "react-icons/cg";
+import { GiCentaurHeart } from "react-icons/gi";
+import { CgGym } from "react-icons/cg";
 
 
 export const plansData = [
   {
-    icon: <GiCentaurHeart/>,
+    icon: <GiCentaurHeart aria-label="heart icon"/>,
     name: "BASIC PLAN",
     price: "25",
     features: [
@@ -21,7 +15,7 @@ export const plansData = [
     ],
   },
   {
-    icon: <LuCrown/>,
+    icon: <LuCrown aria-label="crown icon"/>,
     name: "PREMIUM PLAN",
     price: "30",
     features: [
@@ -31,7 +25,7 @@ export const plansData = [
     ],
   },
   {
-    icon: <CgGym/>,
+    icon: <CgGym aria-label="dumbbell icon"/>,
     name: "PRO PLAN",
     price: "45",
     features: [

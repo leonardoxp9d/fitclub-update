@@ -1,7 +1,7 @@
 import React from 'react';
 import './Plans.css';
 import {plansData} from '../../data/plansData';
-import whiteTick from '../../assets/whiteTick.png';
+import { BsCheck2Circle } from "react-icons/bs";
 
 const Plans = () => {
   return (
@@ -26,7 +26,7 @@ const Plans = () => {
                     <div className="features">
                         {plan.features.map((feature,i)=>(
                             <div className="feature">
-                                <img src={whiteTick} alt=""/>
+                                <BsCheck2Circle aria-label="check icon"/>
                                 <span key={i}>{feature}</span>
                             </div>
                         ))}
