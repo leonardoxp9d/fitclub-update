@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img alt="Logo" src="https://github.com/leonardoxp9d/teste/assets/54649877/668502a3-bbc9-412f-8649-08c997cf0d76" width="300px">
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  FitClub - Transforme-se na sua melhor versão
+</h3>
 
-## Available Scripts
+<p align="center">
+  Projeto feito em ReactJS, construido para uma academia fictícia, a FitClub.
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://www.linkedin.com/in/leonardo-sl/" target="_blank" rel="noopener noreferrer">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Leonardo Soares de Lima-%23F48915">
+  </a>
 
-### `npm start`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/leonardoxp9d/fitclub-update?color=%23F48915">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <a href="https://github.com/leonardoxp9d/fitclub-update/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/leonardoxp9d/fitclub-update?color=%23F48915">
+  </a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <a href="https://github.com/leonardoxp9d/fitclub-update/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/leonardoxp9d/fitclub-update?color=%23F48915">
+  </a>
+  
+  <img alt="GitHub license" src="https://img.shields.io/github/license/leonardoxp9d/fitclub-update?color=F48915">
+</p>
 
-### `npm test`
+<p align="center">
+  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#%EF%B8%8F-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#%EF%B8%8F-primeiros-passos">Primeiros passos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</br>
 
-### `npm run build`
+<img alt="Mockup" src="https://github.com/leonardoxp9d/teste/assets/54649877/f89051ca-776b-40d7-9f61-07925d14348d">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Sobre
+Esse projeto consiste em uma landing page de uma academia fictícia a Fitclub, ele foi desenvolvido no canal ZAINKEEPSCODE do YouTube, onde pude aprender e aprimorar conceitos sobre React Hooks, framer motion, biblioteca EmailJS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Gostei muito de construir esse projeto, e após implementar a versão original, realizei pequenas modificações como: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Adicionado botão Scroll to top.
+- Adicionado botão Whatsapp.
+- Adicionado transição suave nos efeitos dos botões.
+- Alteração no estilo do menu toggle(menu responsivo).
+- Alteração no estilo da Scrollbar.
+- Alteração de algumas imagens que estavam em formato png, resolvi trocar para o formato svg com a biblioteca react-icons, essa alteração permite uma melhor otimização do arquivo e possibilita adicionar efeitos às imagens via CSS, como feito nos ícones das redes sociais em que pude alterar a cor dele ao passar o mouse encima.
 
-### `npm run eject`
+Deploy do projeto: https://fitclub-update.vercel.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deploy do projeto original do ZAINKEEPSCODE: https://fitclub-1my.pages.dev/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tecnologias
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tecnologias utilizadas para desenvolver
+- [ReactJS](https://reactjs.org/)
+- [Javascript](https://www.javascript.com/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [React-dom](https://www.npmjs.com/package/react-dom)
+- [EmailJS](https://www.emailjs.com/)
+- [React-icons](https://react-icons.github.io/react-icons/)
+- [Framer-motion](https://www.framer.com/motion/)
+ 
+## 🏃‍♂️ Primeiros passos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Clone o projeto e acesse a pasta**
 
-## Learn More
+```bash
+$ git clone https://github.com/leonardoxp9d/fitclub-update.git && cd fitclub-update
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Siga os passos abaixo**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Instale as dependências
+$ yarn
 
-### Code Splitting
+# Inicie o servidor
+$ yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Licença
 
-### Analyzing the Bundle Size
+Esse projeto está sob MIT license. Veja [LICENSE](LICENSE) para mais informações.
+<!--
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+-->
+---
+Feito com 💜 por Leonardo Soares de Lima 😊
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://www.linkedin.com/in/leonardo-sl/" target="_blank" rel="noopener noreferrer">
+  <img alt="Logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="15px"> 
+   Veja meu Linkedin
+</a>
