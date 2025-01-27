@@ -2,7 +2,7 @@
 :root {
   --lightgray: #D9D9D9;
   --gray: #9c9c9c;
-  --orange: #f48915;
+  --orange: hsl(31, 91%, 52%, 1);
   --darkGrey: #464D53;
   --caloryCard: #656565;
   --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
@@ -37,7 +37,7 @@
   justify-content: center;
 }
 
-.blur {
+.blur {  
   background: rgba(253, 120, 43, 0.69);
   position: absolute;
   border-radius: 50%;

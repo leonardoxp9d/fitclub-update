@@ -2,14 +2,20 @@
     background-color: var(--orange);
     color: var(--appColor);
     position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    z-index: 3;
-    font-size: 2rem;
-    border-radius: 1rem;
+    bottom: 4.7rem;
+    right: 4.7rem;
+    z-index: 4;
+    font-size: 3rem;
+    border-radius: 50%;
     visibility: hidden;
     opacity: 0;
     transition: .4s ease-in-out;
+}
+
+.scrollTopButton:hover {
+    filter: none;
+    box-shadow: 0 .5rem 3rem hsl(31, 91%, 52%, 1);
+    transform: scale(1.2);
 }
 
 .scrollTopButton.visible {
@@ -19,7 +25,7 @@
 
 .scrollTopButton > a {
     display: flex;
-    aling-items: center;
+    align-items: center;
     justify-content: center;
     padding: 1.5rem;
 }

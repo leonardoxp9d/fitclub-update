@@ -1,17 +1,23 @@
 .whatsappButton {
-    background-color: var(--orange);
-    color: var(--appColor);
+    background-color: hsla(145, 60%, 50%);;
+    color: white;
     position: fixed;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    bottom: 4.7rem;
+    left: 4.7rem;
     font-size: 4rem;
-    border-radius: 1rem;
+    border-radius: 50%;
     z-index: 3;
+    transition: all .4s ease-in-out;
+}
+.whatsappButton:hover {
+    filter: none;
+    transform: scale(1.2);
+    box-shadow: 0 .5rem 3rem hsla(145, 60%, 50%, 1);
 }
 
 .whatsappButton > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    padding: 1rem;
 }
