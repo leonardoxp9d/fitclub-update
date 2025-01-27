@@ -37,7 +37,7 @@
 
 </br>
 
-<img alt="Mockup" src="https://github.com/leonardoxp9d/teste/assets/54649877/f89051ca-776b-40d7-9f61-07925d14348d">
+<img alt="Mockup" src="https://github.com/user-attachments/assets/2078a312-67b9-4002-91e0-502c0b159730">
 
 ## 🚀 Sobre
 Esse projeto consiste em uma landing page de uma academia fictícia a Fitclub, ele foi desenvolvido no canal ZAINKEEPSCODE do YouTube, onde pude aprender e aprimorar conceitos sobre React Hooks, framer motion, biblioteca EmailJS.
